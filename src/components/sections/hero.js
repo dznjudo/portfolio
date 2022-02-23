@@ -129,7 +129,7 @@ const Hero = () => {
         <a href="https://jpmorganchase.com/" target="_blank" rel="noreferrer">
           J.P. Morgan Chase
         </a>
-        .
+        &nbsp;in Jacksonville, FL.
       </p>
     </>
   );
