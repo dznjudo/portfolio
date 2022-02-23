@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
+import { StaticImage } from 'gatsby-plugin-image';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
 
@@ -46,6 +47,64 @@ const StyledHeroSection = styled.section`
   }
 `;
 
+const StyledPic = styled.div`
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: 40%;
+
+  @media (max-width: 768px) {
+    margin: 50px auto 0;
+  }
+
+  .wrapper {
+    display: block;
+    position: relative;
+    width: 100%;
+
+    &:hover,
+    &:focus {
+      background: transparent;
+      outline: 0;
+
+      &:after {
+        top: 15px;
+        left: 15px;
+      }
+
+      .img {
+        filter: none;
+        mix-blend-mode: normal;
+      }
+    }
+
+    .img {
+      position: relative;
+      border-radius: var(--border-radius);
+      mix-blend-mode: screen;
+      transition: var(--transition);
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--border-radius);
+      transition: var(--transition);
+    }
+
+    &:before {
+      top: 0;
+      left: 0;
+      background-color: var(--navy);
+      mix-blend-mode: screen;
+    }
+  }
+`;
+
 const Hero = () => {
   const [isMounted, setIsMounted] = useState(false);
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -59,29 +118,25 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Brittany Chiang.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const one = <h1>Hello, my name is</h1>;
+  const two = <h2 className="big-heading">Tyler Mathes.</h2>;
+  const three = <h3 className="sub-heading">I solve problems through design + code.</h3>;
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building (and occasionally designing) exceptional
-        digital experiences. Currently, I’m focused on building accessible, human-centered products
-        at{' '}
-        <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-          Upstatement
+        I’m a hybrid interaction designer and front-end engineer specializing in enterprise design
+        systems. Currently, I’m focused on building out the design system and creating accessible,
+        human-centered products at{' '}
+        <a href="https://availity.com/" target="_blank" rel="noreferrer">
+          Availity
         </a>
-        .
+        &nbsp;in Jacksonville, FL.
       </p>
     </>
   );
   const five = (
-    <a
-      className="email-link"
-      href="https://www.newline.co/courses/build-a-spotify-connected-app"
-      target="_blank"
-      rel="noreferrer">
-      Check out my course!
+    <a className="email-link" href="#projects" rel="noreferrer">
+      See My Recent Work
     </a>
   );
 
@@ -89,6 +144,17 @@ const Hero = () => {
 
   return (
     <StyledHeroSection>
+      <StyledPic>
+        <div className="wrapper">
+          <StaticImage
+            className="img"
+            src="../../images/hero-bg.jpg"
+            quality={95}
+            formats={['AUTO', 'WEBP', 'AVIF']}
+            alt="abstract"
+          />
+        </div>
+      </StyledPic>
       {prefersReducedMotion ? (
         <>
           {items.map((item, i) => (

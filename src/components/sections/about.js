@@ -17,6 +17,9 @@ const StyledAboutSection = styled.section`
       display: block;
     }
   }
+  .link {
+    display: inline;
+  }
 `;
 const StyledText = styled.div`
   ul.skills-list {
@@ -125,7 +128,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = ['JavaScript (ES6+)', 'Design Tokens', 'React', 'Figma', 'Node.js', 'Material UI'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,33 +138,36 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello! My name is Tyler and I love technology! My interest in design started when I
+              was traveling the Western Pacific with the Navy – I used to collect event flyers in
+              each country I would visit! Eventually I had to make my own flyers (which were
+              terrible), so I went to school for Design and Digital Media at the University of North
+              Florida, which is where I fell in love with the web.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              Fast-forward to today, where I’ve had the privilege of working on websites for{' '}
+              <a href="https://www.vizergy.com/">a boutique web design agency</a> for the hotel
+              industry, callcenter software for a{' '}
+              <a href="https://www.floridablue.com/">major health insurance company</a>, and a{' '}
+              <a className="link" href="https://availity.com/">
+                SaaS framework used nationwide by millions of providers.
+              </a>
             </p>
 
             <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              My main focus these days is building future-proof enterprise design systems at scale,
+              bridging the gap between developers and designers, and advocating for accessibility
+              through user-centered design.
             </p>
 
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>
+              Outside of work, I like to catch a game with my son (Go Jags!), or work on other
+              creative hobbies. Recently I've been into making music with modular analog hardware
+              synthesizers, it's wild!
+            </p>
+
+            <p>Here are a few tools I’ve been working with recently:</p>
           </div>
 
           <ul className="skills-list">
