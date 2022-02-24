@@ -7,8 +7,8 @@ module.exports = {
       url: 'https://github.com/dznjudo',
     },
     {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/dznjudo',
+      name: 'Dribbble',
+      url: 'https://www.dribbble.com/dznjudo',
     },
     {
       name: 'Twitter',
