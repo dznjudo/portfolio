@@ -8,6 +8,7 @@ import {
   IconFolder,
   IconFork,
   IconGitHub,
+  IconDribbble,
   IconInstagram,
   IconLinkedin,
   IconLoader,
@@ -25,6 +26,8 @@ const Icon = ({ name }) => {
       return <IconBookmark />;
     case 'Codepen':
       return <IconCodepen />;
+    case 'Dribbble':
+      return <IconDribbble />;
     case 'External':
       return <IconExternal />;
     case 'Folder':
