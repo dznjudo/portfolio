@@ -1,14 +1,14 @@
 ---
-date: '2020-03-27'
-title: 'Integrating Algolia Search with WordPress Multisite'
+date: '2022-04-14'
+title: 'Piping Design Tokens from Figma'
 github: ''
-external: 'https://medium.com/stories-from-upstatement/integrating-algolia-search-with-wordpress-multisite-e2dea3ed449c'
+external: 'https://medium.com/@dznjudo/piping-design-tokens-from-figma-8a086a6ac17c'
 tech:
-  - Algolia
-  - WordPress
-  - PHP
-company: 'Upstatement'
+  - Design Tokens
+  - Figma
+  - Style Dictionary
+company: 'Availity'
 showInProjects: true
 ---
 
-Building a custom multisite compatible WordPress plugin to build global search with Algolia
+Managing design tokens in Figma and synchronizing with a Git repository

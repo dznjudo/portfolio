@@ -1,8 +1,8 @@
 ---
 date: '1'
-title: 'Concierge Service Model'
+title: 'Customer Portal'
 cover: './concierge.jpg'
-external: '/concierge.pdf'
+external: '/portal.pdf'
 company: 'Florida Blue'
 tech:
   - Adobe XD

@@ -1,8 +1,8 @@
 ---
-date: '1'
-title: 'Concierge Service Model'
+date: '2'
+title: 'Payments'
 cover: './concierge.jpg'
-external: '/concierge.pdf'
+external: '/payments.pdf'
 company: 'Florida Blue'
 tech:
   - Adobe XD
