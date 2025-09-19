@@ -1,7 +1,7 @@
 ---
 date: '1'
 title: 'Customer Portal'
-cover: './concierge.jpg'
+cover: './portal2x.jpg'
 external: '/portal.pdf'
 company: 'Florida Blue'
 tech:

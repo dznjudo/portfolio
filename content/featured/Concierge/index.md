@@ -1,7 +1,7 @@
 ---
 date: '1'
 title: 'Concierge Service Model'
-cover: './concierge.jpg'
+cover: './concierge2x.jpg'
 external: '/concierge.pdf'
 company: 'Florida Blue'
 tech:

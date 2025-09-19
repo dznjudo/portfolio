@@ -1,7 +1,7 @@
 ---
 date: '1'
 title: 'Provider Search'
-cover: './concierge.jpg'
+cover: './search2x.jpg'
 external: '/search.pdf'
 company: 'Florida Blue'
 tech:

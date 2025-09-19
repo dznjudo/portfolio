@@ -1,7 +1,7 @@
 ---
 date: '2'
 title: 'Payments'
-cover: './concierge.jpg'
+cover: './payments2x.jpg'
 external: '/payments.pdf'
 company: 'Florida Blue'
 tech:
