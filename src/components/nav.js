@@ -100,7 +100,7 @@ const StyledNav = styled.nav`
       &:hover,
       &:focus {
         outline: 0;
-        transform: translate(-4px, -4px);
+        transform: translate(-2px, -2px);
         .hex-container {
           transform: translate(4px, 3px);
         }
