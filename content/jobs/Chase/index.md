@@ -1,7 +1,7 @@
 ---
 date: '2022-10-01'
 title: 'User Experience Design Lead, Vice President'
-company: 'J.P. Morgan Chase'
+company: 'Chase'
 location: 'Remote'
 range: 'Oct 2022 – Present'
 url: 'https://www.jpmorganchase.com/'
