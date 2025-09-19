@@ -7,8 +7,8 @@ range: 'Oct 2022 – Present'
 url: 'https://www.jpmorganchase.com/'
 ---
 
-- Built over 100 Figma components with over a million inserts per week
-- Managed multi-theme Figma design libraries for different frameworks leveraged by over 1,000 designers
-- Launched a Shared Library initiative for dispersed teams to better collaborate and showcase their work
-- Worked 1:1 with Nathan Curtis facilitating usability workshops, conducting research and documenting new processes
-- Defined process for portfolio teams to build out new libraries using the Manhattan Design System libraries
+- Built 100+ Figma components with 1M+ weekly inserts, streamlining enterprise platform workflows.
+- Managed multi-theme Figma libraries for several brands and platforms, ensuring consistency for 1,000+ designers
+- Launched a Shared Library initiative that boosted collaboration, reuse, and cross-team alignment.
+- Partnered with Nathan Curtis to deliver workshops, research, and scalable UX processes, elevating design system maturity.
+- Defined process for portfolio teams to build out new libraries using the Manhattan Design System libraries to accelerate adoption and reduce duplication
