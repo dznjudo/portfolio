@@ -123,13 +123,12 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m a hybrid interaction designer and front-end engineer specializing in enterprise design
-        systems. Currently, I’m focused on building out the design system and creating accessible,
-        human-centered products at{' '}
-        <a href="https://availity.com/" target="_blank" rel="noreferrer">
-          Availity
+        I’m a senior product designer and design systems lead specializing in enterprise design
+        systems. Currently, I’m focused on building out the Manhattan Design System at{' '}
+        <a href="https://jpmorganchase.com/" target="_blank" rel="noreferrer">
+          J.P. Morgan Chase
         </a>
-        &nbsp;in Jacksonville, FL.
+        .
       </p>
     </>
   );
