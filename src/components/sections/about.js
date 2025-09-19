@@ -130,10 +130,10 @@ const About = () => {
   }, []);
 
   const skills = [
-    'JavaScript (ES6+)',
-    'Design Tokens',
-    'React',
     'Figma',
+    'Design Tokens',
+    'Zeroheight',
+    'AI Design Tools',
     'Style Dictionary',
     'Material UI',
   ];
@@ -146,33 +146,30 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Tyler and I love technology! My interest in design started when I
-              was traveling the Western Pacific with the Navy – I used to collect event flyers in
-              each country I would visit! Eventually I had to make my own flyers (which were
-              terrible), so I went to school for Design and Digital Media at the University of North
-              Florida, which is where I fell in love with the web.
+              Hi, I’m Tyler! My passion for design and technology began while traveling the Western
+              Pacific during my time in the Navy. I started collecting event flyers in each country
+              I visited, and eventually began creating my own — they weren’t great, but they sparked
+              a creative drive that led me to pursue a degree in Design and Digital Media at the
+              University of North Florida. That’s where I discovered my love for the web.
             </p>
 
             <p>
-              Fast-forward to today, where I’ve had the privilege of working on websites for{' '}
-              <a href="https://www.vizergy.com/">a boutique web design agency</a> for the hotel
-              industry, callcenter software for a{' '}
-              <a href="https://www.floridablue.com/">major health insurance company</a>, and a{' '}
-              <a className="link" href="https://availity.com/">
-                SaaS framework used nationwide by millions of providers.
-              </a>
+              Since then, I’ve had the opportunity to design hotel websites at a boutique web design
+              agency, streamline call center software for a major health insurance provider, and
+              develop internal tools used by thousands of designers at a leading financial
+              institution.
             </p>
 
             <p>
-              My main focus these days is building future-proof enterprise design systems at scale,
-              bridging the gap between developers and designers, and advocating for accessibility
-              through user-centered design.
+              These days, my focus is on building scalable, future-proof enterprise design systems —
+              bridging the gap between design and engineering, and championing accessibility through
+              user-centered design.
             </p>
 
             <p>
-              Outside of work, I like to catch a game with my son (Go Jags!), or work on other
-              creative hobbies. Recently I've been into making music with modular analog hardware
-              synthesizers, it's wild!
+              Outside of work, I enjoy catching Jaguars games with my son and exploring creative
+              hobbies. Lately, I’ve been diving into the world of modular analog synthesizers —
+              music has always been a huge interest of mine.
             </p>
 
             <p>Here are a few tools I’ve been working with recently:</p>
