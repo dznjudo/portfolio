@@ -11,4 +11,5 @@ tech:
   - Service Design
 ---
 
-A suite of desktop tools used for advanced callcenter personnel to manage a roster of members with chronic conditions. The goal of their role is to reduce the cost of healthcare by offering information about resources, influencing low cost healthcare options and managing chronic diagnoses.
+Reimagined payments platform used by callcenter personnel to research payments issues for their
+customers
