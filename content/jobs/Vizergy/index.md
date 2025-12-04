@@ -7,7 +7,8 @@ range: 'Apr 2017 – July 2017'
 url: 'https://www.vizergy.com/'
 ---
 
-- Mapped out the functionality and design of new sites using sitemaps, wireframes and inVision prototypes
-- Developed fully functional websites using HTML, CSS and Javascript
-- Articulated styleguides and design rationale, and presented interactive prototypes in client calls
-- Designed travel and lodging websites for a national client base, including Hard Rock Hotel, Ramada, Best Western and Wyndham
+- Planned site layouts and user flows through visually clear wireframes and journey maps
+- Created pixel perfect interactive and responsive prototypes that captured client vision
+- Built visually consistent, responsive websites using HTML, CSS and JavaScript
+- Presented style guides, visual rationale and interactive prototypes to stakeholders
+- Designed visually cohesive travel and lodging sites for global brands including Hard Rock Hotel, Ramada, Best Western and Wyndham
