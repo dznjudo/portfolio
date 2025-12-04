@@ -7,8 +7,8 @@ module.exports = {
       url: 'https://github.com/dznjudo',
     },
     {
-      name: 'Behance',
-      url: 'https://www.behance.net/tylermathes',
+      name: 'Dribbble',
+      url: 'https://dribbble.com/dznjudo',
     },
     {
       name: 'Twitter',
