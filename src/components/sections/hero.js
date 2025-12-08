@@ -127,7 +127,7 @@ const Hero = () => {
         I'm a design systems lead and product designer for early-stage AI, fintech, and healthcare
         teams. Currently, I’m focused on managing the Manhattan Design System at{' '}
         <a href="https://jpmorganchase.com/" target="_blank" rel="noreferrer">
-          J.P. Morgan Chase.
+          J.P. Morgan Chase
         </a>
         .
       </p>
