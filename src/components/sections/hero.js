@@ -120,14 +120,12 @@ const Hero = () => {
 
   const one = <h1>Hello, my name is</h1>;
   const two = <h2 className="big-heading">Tyler Mathes.</h2>;
-  const three = (
-    <h3 className="sub-heading">Product designer for early-stage AI, fintech and healthcare</h3>
-  );
+  const three = <h3 className="sub-heading">I solve problems through design, AI + code.</h3>;
   const four = (
     <>
       <p>
-        I’m a senior product designer and design systems lead specializing in enterprise design
-        systems. Currently, I’m focused on building out the Manhattan Design System at{' '}
+        I'm a design systems lead and product designer for early-stage AI, fintech, and healthcare
+        teams. Currently, I’m focused on managing the Manhattan Design System at{' '}
         <a href="https://jpmorganchase.com/" target="_blank" rel="noreferrer">
           J.P. Morgan Chase
         </a>
