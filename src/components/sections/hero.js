@@ -125,7 +125,8 @@ const Hero = () => {
     <>
       <p>
         I'm a design systems lead and product designer for early-stage AI, fintech, and healthcare
-        teams. Currently, I’m focused on managing the Manhattan Design System at{' '}
+        teams. I'm currently building out Figma libraries and tools for the Manhattan Design System
+        at{' '}
         <a href="https://jpmorganchase.com/" target="_blank" rel="noreferrer">
           J.P. Morgan Chase
         </a>
