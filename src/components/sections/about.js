@@ -145,33 +145,43 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hi, I’m Tyler! My passion for design and technology began while traveling the Western
-              Pacific during my time in the Navy. I started collecting event flyers in each country
-              I visited, and eventually began creating my own — they weren’t great, but they sparked
-              a creative drive that led me to pursue a degree in Design and Digital Media at the
-              University of North Florida. That’s where I discovered my love for the web.
+              Hi, I'm Tyler. I'm a senior product designer with a passion for creating scalable,
+              thoughtful design that bridges the gap between design excellence and engineering
+              realities.
             </p>
 
             <p>
-              Since then, I’ve had the opportunity to design hotel websites at a boutique web design
-              agency, streamline call center software for a major health insurance provider, and
-              develop internal tools used by thousands of designers at a leading financial
-              institution.
+              My design career began unexpectedly—while traveling through the Western Pacific during
+              my Navy service, I started collecting event flyers from each country I visited. What
+              began as a casual hobby evolved into a creative obsession that led me to formalize my
+              skills with a degree in Design and Digital Media from the University of North Florida.
+              That's where I discovered my real passion: design for the web.
             </p>
 
             <p>
-              These days, my focus is on building scalable, future-proof enterprise design systems —
-              bridging the gap between design and engineering, and championing accessibility through
-              user-centered design.
+              Over the past several years, I've built diverse experience across the design
+              landscape. I've designed intuitive hotel websites at a boutique agency, transformed
+              complex call center workflows for a major health insurance provider, and architected
+              internal design tools that scaled to thousands of users at a Fortune 500 financial
+              institution. Each project deepened my understanding of how thoughtful design systems
+              create alignment, consistency, and impact at enterprise scale.
             </p>
 
             <p>
-              Outside of work, I enjoy catching Jaguars games with my son and exploring creative
-              hobbies. Lately, I’ve been diving into the world of modular analog synthesizers —
-              music has always been a huge interest of mine.
+              Today, I'm focused on designing future-proof systems that empower teams and delight
+              users. I'm particularly passionate about the intersection of design and engineering—
+              building design systems, design tokens, and processes that reduce friction and amplify
+              quality across organizations. Accessibility and user-centered design are
+              non-negotiables in everything I create.
             </p>
 
-            <p>Here are a few tools I’ve been working with recently:</p>
+            <p>
+              Outside of design, I'm a devoted Jaguars fan (season ticket holder and proud of it),
+              and I spend my downtime with my son. I'm also an enthusiast of modular analog
+              synthesizers—music has always been central to how I think about design and creativity.
+            </p>
+
+            <p>Tools & Systems I work with:</p>
           </div>
 
           <ul className="skills-list">
