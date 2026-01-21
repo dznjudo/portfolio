@@ -16,7 +16,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     {
       postsRemark: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/content/posts/" } }
-        sort: { order: DESC, fields: [frontmatter___date] }
+        sort: { frontmatter: { date: DESC } }
         limit: 1000
       ) {
         edges {
@@ -30,6 +30,19 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       tagsGroup: allMarkdownRemark(limit: 2000) {
         group(field: frontmatter___tags) {
           fieldValue
+        }
+      }
+      projectsRemark: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/content/projects/" } }
+        sort: { frontmatter: { date: DESC } }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            frontmatter {
+              title
+            }
+          }
         }
       }
     }
@@ -48,7 +61,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     createPage({
       path: node.frontmatter.slug,
       component: postTemplate,
-      context: {},
+      context: {
+        path: node.frontmatter.slug,
+      },
     });
   });
 
@@ -61,6 +76,21 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       component: tagTemplate,
       context: {
         tag: tag.fieldValue,
+      },
+    });
+  });
+
+  // Create project pages
+  const projects = result.data.projectsRemark.edges;
+  const projectTemplate = path.resolve(`src/templates/project.js`);
+
+  projects.forEach(({ node }) => {
+    const title = node.frontmatter.title || '';
+    createPage({
+      path: `/projects/${_.kebabCase(title)}/`,
+      component: projectTemplate,
+      context: {
+        title,
       },
     });
   });
