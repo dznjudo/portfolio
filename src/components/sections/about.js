@@ -64,7 +64,6 @@ const StyledPic = styled.div`
     position: relative;
     width: 100%;
     border-radius: var(--border-radius);
-    background-color: var(--green);
 
     &:hover,
     &:focus {
@@ -74,22 +73,14 @@ const StyledPic = styled.div`
       &:after {
         transform: translate(8px, 8px);
       }
-
-      .img {
-        filter: none;
-        mix-blend-mode: normal;
-      }
     }
 
     .img {
       position: relative;
       border-radius: var(--border-radius);
-      mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1);
       transition: var(--transition);
     }
 
-    &:before,
     &:after {
       content: '';
       display: block;
@@ -98,16 +89,6 @@ const StyledPic = styled.div`
       height: 100%;
       border-radius: var(--border-radius);
       transition: var(--transition);
-    }
-
-    &:before {
-      top: 0;
-      left: 0;
-      background-color: var(--navy);
-      mix-blend-mode: screen;
-    }
-
-    &:after {
       border: 2px solid var(--green);
       top: 14px;
       left: 14px;
@@ -145,40 +126,26 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hi, I'm Tyler. I'm a senior product designer with a passion for creating scalable,
-              thoughtful design that bridges the gap between design excellence and engineering
-              realities.
+              Hi, I'm Tyler—a senior product designer specializing in scalable design systems that
+              work across enterprise organizations.
             </p>
 
             <p>
-              My design career began unexpectedly—while traveling through the Western Pacific during
-              my Navy service, I started collecting event flyers from each country I visited. What
-              began as a casual hobby evolved into a creative obsession that led me to formalize my
-              skills with a degree in Design and Digital Media from the University of North Florida.
-              That's where I discovered my real passion: design for the web.
+              I've designed intuitive hotel websites at a boutique agency, transformed complex call
+              center workflows for a major health insurer, and architected internal design tools for
+              thousands of users at a Fortune 500 financial institution. Each experience reinforced
+              my belief that thoughtful design systems create alignment and impact at scale.
             </p>
 
             <p>
-              Over the past several years, I've built diverse experience across the design
-              landscape. I've designed intuitive hotel websites at a boutique agency, transformed
-              complex call center workflows for a major health insurance provider, and architected
-              internal design tools that scaled to thousands of users at a Fortune 500 financial
-              institution. Each project deepened my understanding of how thoughtful design systems
-              create alignment, consistency, and impact at enterprise scale.
+              Today, I focus on building future-proof systems at the intersection of design and
+              engineering—design systems, tokens, and processes that reduce friction and amplify
+              quality. Accessibility and user-centered design are non-negotiable.
             </p>
 
             <p>
-              Today, I'm focused on designing future-proof systems that empower teams and delight
-              users. I'm particularly passionate about the intersection of design and engineering—
-              building design systems, design tokens, and processes that reduce friction and amplify
-              quality across organizations. Accessibility and user-centered design are
-              non-negotiables in everything I create.
-            </p>
-
-            <p>
-              Outside of design, I'm a devoted Jaguars fan (season ticket holder and proud of it),
-              and I spend my downtime with my son. I'm also an enthusiast of modular analog
-              synthesizers—music has always been central to how I think about design and creativity.
+              When I'm not designing, you'll find me at TIAA Bank Field cheering on the Jaguars,
+              spending time with my son, or exploring sound design on modular synthesizers.
             </p>
 
             <p>Tools & Systems I work with:</p>

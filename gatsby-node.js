@@ -7,6 +7,46 @@
 const path = require('path');
 const _ = require('lodash');
 
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+
+  const typeDefs = `
+    type MarkdownRemarkFrontmatter {
+      title: String
+      description: String
+      slug: String
+      tags: [String]
+      timeline: String
+      team: String
+      role: String
+      heroImage: File @fileByRelativePath
+      features: [Feature]
+      metrics: [Metric]
+      nextProject: NextProject
+    }
+
+    type Feature {
+      title: String!
+      description: String!
+    }
+
+    type Metric {
+      value: String!
+      label: String!
+      gradient: String
+      borderColor: String
+      textColor: String
+    }
+
+    type NextProject {
+      title: String
+      url: String!
+    }
+  `;
+
+  createTypes(typeDefs);
+};
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
   const postTemplate = path.resolve(`src/templates/post.js`);
@@ -41,6 +81,22 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           node {
             frontmatter {
               title
+            }
+          }
+        }
+      }
+      caseStudiesRemark: allMarkdownRemark(
+        filter: {
+          fileAbsolutePath: { regex: "/content/featured/" }
+          frontmatter: { slug: { ne: null } }
+        }
+        sort: { frontmatter: { date: ASC } }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            frontmatter {
+              slug
             }
           }
         }
@@ -93,6 +149,23 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         title,
       },
     });
+  });
+
+  // Create case study pages
+  const caseStudies = result.data.caseStudiesRemark.edges;
+  const caseStudyTemplate = path.resolve(`src/templates/casestudy.js`);
+
+  caseStudies.forEach(({ node }) => {
+    const slug = node.frontmatter.slug;
+    if (slug) {
+      createPage({
+        path: slug,
+        component: caseStudyTemplate,
+        context: {
+          slug,
+        },
+      });
+    }
   });
 };
 
